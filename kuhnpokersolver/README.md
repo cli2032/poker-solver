@@ -24,7 +24,7 @@ When run, this program will print out the expected value of the final generated 
 
 The program has also been configured to generate a line graph showing how frequencies of different betting actions change over the course of the programs iterations. From this, we can see how the program quickly converges towards correct strategies. 
 
-![alt text](https://github.com/cli2032/poker-solver/tree/main/kuhnpokersolver/1000iterations.png?raw=true)
+![alt text](https://github.com/cli2032/poker-solver/tree/main/kuhnpokersolver/1000iterations.jpg?raw=true)
 
 For instance, in the following image we see that the program learns to always bet and call in the `3p` and `3pb` line, respectively. This makes intuitive sense: when we have the `3` (King), we have the best possible hand, so when we are the last to act, whether facing a bet or deciding whether or not to bet, we should always opt to put more money into the pot, as we are guaranteed to win it. Following the same logic, we see the program also correctly learns to always fold when facing a bet and holding the `1` (Jack), since it is guaranteed to lose at showdown. Moreover, when holding the `2` (Queen), the program quickly opts to never bet when given the option, as when a player bets when holding the Queen, their opponent will always fold when they have an inferior hand and always call when they have a superior one.
 
